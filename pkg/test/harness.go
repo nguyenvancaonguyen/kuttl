@@ -287,6 +287,9 @@ func (h *Harness) Config() (*rest.Config, error) {
 
 	defer f.Close()
 
+	h.config.QPS = 100
+	h.config.Burst = 200
+
 	return h.config, testutils.Kubeconfig(h.config, f)
 }
 
