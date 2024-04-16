@@ -26,7 +26,7 @@ builds:
 
 release:
   github:
-    owner: kudobuilder
+    owner: nguyenvancaonguyen
     name: kuttl
   draft: false
   prerelease: auto
